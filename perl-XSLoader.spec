@@ -1,5 +1,5 @@
 %define	module	XSLoader
-%define	upstream_version 0.10
+%define	upstream_version 0.15
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
