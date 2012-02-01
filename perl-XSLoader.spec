@@ -10,7 +10,7 @@ License:	GPLv1+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module//%{module}-%{upstream_version}.tar.gz
-
+BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 
