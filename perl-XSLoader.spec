@@ -1,19 +1,18 @@
-%define upstream_name    XSLoader
-%define upstream_version 0.10
+%define	module	XSLoader
+%define	upstream_version 0.10
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Name:		perl-%{module}
+Version:	%perl_convert_version %{upstream_version}
 Release:	3
 
-Summary:    Dynamically load C libraries into Perl code
-License:    GPL+ or Artistic
-Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Summary:	Dynamically load C libraries into Perl code
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{module}
+Source0:	http://www.cpan.org/modules/by-module//%{module}-%{upstream_version}.tar.gz
 
-BuildRequires: perl-devel
-BuildRequires: perl(Test::More)
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 
 %description
 This module defines a standard simplified interface to the dynamic
@@ -25,7 +24,7 @@ of DynaLoader are not implemented in XSLoader, like for example the
 dl_load_flags, not honored by XSLoader.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{module}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -35,15 +34,9 @@ dl_load_flags, not honored by XSLoader.
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
-%perl_vendorlib/*
-
+%{perl_vendorlib}/*
