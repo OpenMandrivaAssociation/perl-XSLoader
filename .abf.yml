@@ -1,4 +1,2 @@
-removed_sources:
-  XSLoader-0.15.tar.gz: 9fd11242180a2fcf8dfba4a3a1a56c16428e2a01
 sources:
-  XSLoader-0.16.tar.gz: 3616866a0fd34e4f968ed27677d74955eeecc67b
+  XSLoader-0.24.tar.gz: 177b018f11088dbe10d87cf19ef7a39b960c79c6
