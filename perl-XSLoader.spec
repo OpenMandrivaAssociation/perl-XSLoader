@@ -7,7 +7,7 @@ Release:	1
 Summary:	Dynamically load C libraries into Perl code
 License:	GPLv1+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SA/SAPER/%{module}-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(ExtUtils::MakeMaker)
