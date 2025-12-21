@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SA/SAPER/%{module}-%{upstream_version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Test::More) >= 0.470.0
 BuildRequires:	perl(Test::Pod)
