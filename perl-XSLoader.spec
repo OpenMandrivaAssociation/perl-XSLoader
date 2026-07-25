@@ -2,13 +2,13 @@
 %define	upstream_version 0.24
 
 Name:		perl-%{module}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	%{upstream_version}
+Release:	2
 Summary:	Dynamically load C libraries into Perl code
 License:	GPLv1+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SA/SAPER/%{module}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/module/XSLoader
+Source0:	https://cpan.metacpan.org/authors/id/S/SA/SAPER/XSLoader-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
