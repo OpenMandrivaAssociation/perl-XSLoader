@@ -1,14 +1,12 @@
 %define	module XSLoader
-%define	upstream_version 0.24
-
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	2
+Version:	0.24
+Release:	3
 Summary:	Dynamically load C libraries into Perl code
 License:	GPLv1+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/module/XSLoader
-Source0:	https://cpan.metacpan.org/authors/id/S/SA/SAPER/XSLoader-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SA/SAPER/XSLoader-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -29,7 +27,7 @@ of DynaLoader are not implemented in XSLoader, like for example the
 dl_load_flags, not honored by XSLoader.
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
